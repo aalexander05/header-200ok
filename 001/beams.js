@@ -77,7 +77,7 @@ module.exports = function (regl) {
       uniform float dim;
       void main () {
         float brightness = dot(vNormal, vec3(0.0, 1.0, 0.0));
-        vec3 color = vec3(0.8, 0.0, 0.2);
+        vec3 color = vec3(239.0 / 255.0, 72.0 / 255.0, 60.0 / 255.0);
         gl_FragColor = vec4(
           dim * mix(brightness * color, color, 0.8),
           1.0
